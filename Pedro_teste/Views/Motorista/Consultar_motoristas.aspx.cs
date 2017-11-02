@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Pedro_teste
 {
-    public partial class Consultar_corridas : System.Web.UI.Page
+    public partial class Consultar_motoristas : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

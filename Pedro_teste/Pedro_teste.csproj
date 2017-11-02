@@ -129,9 +129,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Cadastrar_motorista.aspx" />
-    <Content Include="Cadastrar_passageiro.aspx" />
-    <Content Include="Consultar_corridas.aspx" />
+    <Content Include="Views\Motorista\Cadastrar_motorista.aspx" />
+    <Content Include="Views\Passageiro\Cadastrar_passageiro.aspx" />
+    <Content Include="Views\Corridas\Consultar_corridas.aspx" />
+    <Content Include="Views\Motorista\Consultar_motoristas.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -153,7 +154,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
-    <Content Include="Registrar_corrida.aspx" />
+    <Content Include="Views\Corridas\Registrar_corrida.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
@@ -188,33 +189,43 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Views\Passageiro\Consultar_passageiros.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="Cadastrar_motorista.aspx.cs">
+    <Compile Include="Models\Passenger.cs" />
+    <Compile Include="Models\Run.cs" />
+    <Compile Include="Views\Motorista\Cadastrar_motorista.aspx.cs">
       <DependentUpon>Cadastrar_motorista.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Cadastrar_motorista.aspx.designer.cs">
+    <Compile Include="Views\Motorista\Cadastrar_motorista.aspx.designer.cs">
       <DependentUpon>Cadastrar_motorista.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Cadastrar_passageiro.aspx.cs">
+    <Compile Include="Views\Passageiro\Cadastrar_passageiro.aspx.cs">
       <DependentUpon>Cadastrar_passageiro.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Cadastrar_passageiro.aspx.designer.cs">
+    <Compile Include="Views\Passageiro\Cadastrar_passageiro.aspx.designer.cs">
       <DependentUpon>Cadastrar_passageiro.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Consultar_corridas.aspx.cs">
+    <Compile Include="Views\Corridas\Consultar_corridas.aspx.cs">
       <DependentUpon>Consultar_corridas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Consultar_corridas.aspx.designer.cs">
+    <Compile Include="Views\Corridas\Consultar_corridas.aspx.designer.cs">
       <DependentUpon>Consultar_corridas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Motorista\Consultar_motoristas.aspx.cs">
+      <DependentUpon>Consultar_motoristas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Motorista\Consultar_motoristas.aspx.designer.cs">
+      <DependentUpon>Consultar_motoristas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -228,11 +239,11 @@
     </Compile>
     <Compile Include="Models\Sql.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Registrar_corrida.aspx.cs">
+    <Compile Include="Views\Corridas\Registrar_corrida.aspx.cs">
       <DependentUpon>Registrar_corrida.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Registrar_corrida.aspx.designer.cs">
+    <Compile Include="Views\Corridas\Registrar_corrida.aspx.designer.cs">
       <DependentUpon>Registrar_corrida.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
@@ -255,6 +266,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Passageiro\Consultar_passageiros.aspx.cs">
+      <DependentUpon>Consultar_passageiros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Passageiro\Consultar_passageiros.aspx.designer.cs">
+      <DependentUpon>Consultar_passageiros.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

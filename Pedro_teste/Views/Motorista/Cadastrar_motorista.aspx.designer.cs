@@ -83,14 +83,5 @@ namespace Pedro_teste {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button button_cadastrar_motorista;
-        
-        /// <summary>
-        /// Controle button_consultar_motoristas.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button button_consultar_motoristas;
     }
 }

@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="Cadastro de motoristas" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Cadastrar_motorista.aspx.cs" Inherits="Pedro_teste.About" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <script src="Scripts/jquery-3.1.1.min.js"></script>
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">     
     <div id="div_cadastro_motorista" class="form-group container text-center" style="padding: 20px;">   
         <div>
             <h1>Cadastro de motoristas:</h1>
@@ -29,7 +28,6 @@
             <asp:TextBox runat="server" id="input_sexo" type="text" class="container form-control" placeholder="sexo: 'm' ou 'f'"/>
         </div> 
         <br />
-        <asp:Button Text="Cadastrar motorista" runat="server" ID="button_cadastrar_motorista" CssClass="btn btn-primary" OnClick="button_cadastrar_motorista_click"/>
-        <asp:Button Text="Consultar motorista" runat="server" id="button_consultar_motoristas" CssClass="btn btn-primary" OnClick="button_consultar_motorista_click"/>
+        <asp:Button Text="Cadastrar motorista" runat="server" ID="button_cadastrar_motorista" CssClass="btn btn-primary" OnClick="button_cadastrar_motorista_click"/>           
     </div>    
 </asp:Content>    
