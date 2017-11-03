@@ -28,11 +28,21 @@ namespace Pedro_teste
                 label_msg.Text = "Campo de nome do motorista vazio!";
                 return;
             }
+            else if (!input_nome_motorista.Text.Trim().Contains(" "))
+            {
+                label_msg.Text = "Insira o nome completo do motorista!";
+                return;
+            }
 
             //Validando nome do passageiro:
             if (string.IsNullOrWhiteSpace(input_nome_passageiro.Text))
             {
                 label_msg.Text = "Campo de nome do passageiro vazio!";
+                return;
+            }
+            else if (!input_nome_passageiro.Text.Trim().Contains(" "))
+            {
+                label_msg.Text = "Insira o nome completo do passageiro!";
                 return;
             }
 

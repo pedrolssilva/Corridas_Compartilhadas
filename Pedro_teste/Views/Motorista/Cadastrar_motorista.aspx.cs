@@ -20,8 +20,13 @@ namespace Pedro_teste
 
             //Validando campo nome:
             if (string.IsNullOrWhiteSpace(input_nome.Text))
-            {
+            {                  
                 label_msg.Text = "Campo de nome vazio!";
+                return;
+            }
+            else if (!input_nome.Text.Trim().Contains(" "))
+            {
+                label_msg.Text = "Insira o nome completo!";
                 return;
             }
 
@@ -113,7 +118,7 @@ namespace Pedro_teste
             }
             catch (SqlException ex)
             {
-                if (ex.Number == 2627)
+                if (ex.Number == 2601)
                 {
                     label_msg.Text = "CPF DUPLICADO, ja existe um motorista com esse CPF.";
                 }

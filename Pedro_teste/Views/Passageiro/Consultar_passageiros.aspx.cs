@@ -27,6 +27,11 @@ namespace Pedro_teste.Views.Passageiro
                         {
                             using (SqlDataReader reader = cmd.ExecuteReader())
                             {
+                                if (!reader.HasRows)
+                                {
+                                    label_msg.Text = "Não há passageiros ainda...";
+                                    return;
+                                }
                                 //Obtém os registros, um por vez
                                 while (reader.Read() == true)
                                 {
@@ -68,6 +73,11 @@ namespace Pedro_teste.Views.Passageiro
                     {
                         using (SqlDataReader reader = cmd.ExecuteReader())
                         {
+                            if (!reader.HasRows)
+                            {
+                                label_msg.Text = "Não há passageiros ainda...";
+                                return;
+                            }
                             //Obtém os registros, um por vez
                             while (reader.Read() == true)
                             {

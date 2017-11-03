@@ -24,6 +24,11 @@ namespace Pedro_teste
                 label_msg.Text = "Campo de nome vazio!";
                 return;
             }
+            else if (!input_nome.Text.Trim().Contains(" "))
+            {
+                label_msg.Text = "Insira o nome completo!";
+                return;
+            }
 
             //Validando campo data:
             DateTime data;
@@ -82,7 +87,7 @@ namespace Pedro_teste
             }
             catch (SqlException ex)
             {
-                if (ex.Number == 2627)
+                if (ex.Number == 2601)
                 {
                     label_msg.Text = "CPF DUPLICADO, ja existe um passageiro com esse CPF.";
                 }

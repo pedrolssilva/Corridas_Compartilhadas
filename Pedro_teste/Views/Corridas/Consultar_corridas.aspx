@@ -5,6 +5,7 @@
         <div>              
             <asp:Label runat="server" ID="label_msg" CssClass="mensagem"></asp:Label>
         </div>
+         <hr />
         <asp:Button Text="Atualizar" runat="server" ID="button_atualizar_consulta_corridas" CssClass="btn btn-primary" OnClick="button_atualizar_consulta_corridas_click" />
         <br />
         <table class="table table-striped table-dark">

@@ -129,6 +129,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Views\Motorista\Atualizar_status_motorista.aspx" />
     <Content Include="Views\Motorista\Cadastrar_motorista.aspx" />
     <Content Include="Views\Passageiro\Cadastrar_passageiro.aspx" />
     <Content Include="Views\Corridas\Consultar_corridas.aspx" />
@@ -196,8 +197,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="Models\Driver.cs" />
     <Compile Include="Models\Passenger.cs" />
     <Compile Include="Models\Run.cs" />
+    <Compile Include="Views\Motorista\Atualizar_status_motorista.aspx.cs">
+      <DependentUpon>Atualizar_status_motorista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Motorista\Atualizar_status_motorista.aspx.designer.cs">
+      <DependentUpon>Atualizar_status_motorista.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Motorista\Cadastrar_motorista.aspx.cs">
       <DependentUpon>Cadastrar_motorista.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -9,22 +9,22 @@
              <asp:Label runat="server" id="label_msg" CssClass="mensagem"></asp:Label>                
         </div>
         <hr />
-        <div>
+        <div class="form-group row">
             <asp:TextBox runat="server" id="input_nome" type="text" CssClass="container  form-control" placeholder="Nome completo"/>
         </div>
-        <div>
+        <div class="form-group row">
             <asp:TextBox runat="server" id="input_data" type="date" CssClass="container form-control"/>
         </div>
-        <div>
+        <div class="form-group row">
             <asp:TextBox runat="server" id="input_cpf" type="text" class="container form-control" placeholder="CPF"/>
         </div>
-        <div>
+        <div class="form-group row">
             <asp:TextBox runat="server" id="input_modelo_carro" type="text" class="container form-control" placeholder="Modelo do carro"/>
         </div>
-        <div>
+        <div class="form-group row">
             <asp:TextBox runat="server" id="input_status" type="text" class="container form-control" placeholder="Status (ativo ou inativo)"/>
         </div>
-        <div>
+        <div class="form-group row">
             <asp:TextBox runat="server" id="input_sexo" type="text" class="container form-control" placeholder="sexo: 'm' ou 'f'"/>
         </div> 
         <br />
